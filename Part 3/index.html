@@ -2,17 +2,25 @@
 <html>
     <head>
         <title> To Do List</title>
+        <link rel="stylesheet" type="text/css" href="test.css">
+        <script src="jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="add.js"></script>
     </head>
-<body>
-    <div class="toDoDiv">
-        <p>
-            <input type="text" id="inputToDO" class="textinput" placeholder="New to do ... " />
-            <button id="addBtn" class="btnSend"> Add</button>
-        </p>
+
+    
+    <div class="container">
         <h1>Things to do before the immersive:</h1>
-        <ul>
-            
-        </ul>
+    <p><em>Click and drag to reorder, double click to cross an item off.</em></p>
+       
+        <form name="toDoList">
+            <input type="text" id="inputToDO" name="ListItem"/>
+        </form>
+    
+        <div id="button">Add</div>
+        <br/>
+        <ol></ol>
+      
+      
     
     </div>
-</body>
+    </body>

@@ -32,3 +32,39 @@
  */
 
 //writ your code here .....
+var arrayOfPlayers=[];
+function player(name){
+	var players={};
+	var age=0;
+	var position="";
+	var level=0;
+	var availability=true;
+	players.name=name;
+	players.addInfo=addInfo;
+	players.increase=increase;
+	players.availabel=availabel
+	return players;
+}
+
+
+function addInfo(age,position,level,availability){
+	this.age=age
+	this.position=position
+	this.level=level
+	this.availability=availability
+}
+
+arrayOfPlayers.push(addInfo(22,"amman",2,false))
+arrayOfPlayers.push(addInfo(25,"amman",4,true))
+
+function increase(n){
+	this.level=n;
+} 
+
+function availabel(){
+	if(this.availability===true){
+		return true;
+	}else{
+		return false;
+	}
+}
